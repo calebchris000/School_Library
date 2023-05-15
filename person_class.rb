@@ -6,6 +6,7 @@ class Person
     @id = nil
     @name = name
     @age = age
+    @parent_permission = parent_permission
   end
 
   def can_use_services?
