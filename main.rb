@@ -64,8 +64,6 @@ end
 # list_rentals(rental_id)
 # * The initialization part of the program
 
-
-
 puts 'Welcome to the School Library App'
 def main
   puts "Please chose an option by entering an option\n"
