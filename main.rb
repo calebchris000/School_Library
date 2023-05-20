@@ -37,11 +37,11 @@ end
 def create_a_rental
   puts "Select the person form the following list by number (not id)\n\n"
   if defined?($person_list)
-    $person_list.each do |person|
+    $person_list.each_with_index do |person, index|
       if defined?(person.specialization)
         puts "[Teacher] Name: #{person.name}, ID: #{person.id} Age: #{person.age}"
       else
-        puts "[Student] Name: #{person.name}, ID: #{person.id} Age: #{person.age}"
+        puts "#{index}. [Student] Name: #{person.name}, ID: #{person.id} Age: #{person.age}"
       end
     end
   end
