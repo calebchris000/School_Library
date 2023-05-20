@@ -55,14 +55,29 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-- [Ruby Runetime](https://www.postgresql.org/download/) installed
+- [Ruby Runtime](https://www.postgresql.org/download/) installed
 
 
 ### Setup
 
 Clone this repository to your desired folder:
 ```
-git clonehttps://github.com/calebchris000/School_Library.git && cd School_Library
+git clone https://github.com/calebchris000/School_Library.git && cd School_Library
+```
+## Usage
+To run the project, execute the following command:
+```
+ruby main.rb
+```
+
+## Run tests
+To run tests, first, install the necessary libraries
+```
+gem install rubocop
+```
+Then, run the following command:
+```
+rubocop
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
