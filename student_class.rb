@@ -1,8 +1,13 @@
 require './person_class'
 require './classroom'
 class Student < Person
-  def initialize(age, _name, _parent_permission, classroom)
-    super(age, _name = 'Unknown', _parent_permission = true)
+  attr_accessor :age, :name, :parent_permission
+
+  def initialize(age, name, parent_permission, classroom)
+    super(age, name: 'Unknown', parent_permission: true)
+    @age = age
+    @name = name
+    @parent_permission = parent_permission
     @classroom = classroom
   end
 
@@ -15,3 +20,6 @@ class Student < Person
     classroom.students.push(self) unless classroom.students.include?(self)
   end
 end
+
+stud = Student.new(22, 'Cal', false, 'null')
+puts stud.name

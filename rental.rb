@@ -1,3 +1,5 @@
+require './book_class'
+
 class Rental
   attr_accessor :date, :person, :book
 
